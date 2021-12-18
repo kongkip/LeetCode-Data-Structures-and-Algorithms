@@ -17,6 +17,7 @@ def find_length(nums1: List[int], nums2: List[int]) -> int:
             if nums1[i] == nums2[j]:
                 dp[j][i] = dp[j + 1][i + 1] + 1
 
+
     # Find maximum of all the values in dp[][] array to get the maximum length
     for i in dp:
         for j in i:
@@ -30,3 +31,5 @@ class TestFindLength(unittest.TestCase):
         _nums1 = [1, 2, 3, 2, 1]
         _nums2 = [3, 2, 1, 4, 7]
         self.assertEqual(find_length(_nums1, _nums2), 3, "Should be 3")
+
+TestFindLength().test_find_length()

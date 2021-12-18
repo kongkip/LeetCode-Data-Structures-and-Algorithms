@@ -1,5 +1,5 @@
 # solution
-def longest_palindrome(s):
+def longest_palindrome_substr(s):
     # start from the middle and move outwards
     def _helper(l, r):
         while l >= 0 and r < len(s) and s[l] == s[r]:

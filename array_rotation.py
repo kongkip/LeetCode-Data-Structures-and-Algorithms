@@ -1,4 +1,4 @@
-# left rotate an array for by d
+# left rotate an array by d
 from timeit import timeit
 
 
